@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaviar Club - Personal Finance</title>
+    <style>
+        /* Reset and basic styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #17a2b8;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #138496;
+        }
+
+        .features {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            max-width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .feature h2 {
+            text-align: center;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 1rem;
+        }
+
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .testimonial-item {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+        }
+
+        .testimonial-item cite {
+            font-weight: bold;
+        }
+
+        .contact {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #17a2b8;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #138496;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries for responsiveness */
+
+        /* Tablets and smaller desktops */
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
+            .hero p {
+                font-size: 1.8rem;
+            }
+            .features {
+                margin-top: 60px;
+            }
+            .feature {
+                max-width: 45%;
+            }
+        }
+
+        /* Large desktops */
+        @media (min-width: 1200px) {
+            .hero h1 {
+                font-size: 5rem;
+            }
+            .hero p {
+                font-size: 2rem;
+            }
+            .features {
+                margin-top: 80px;
+            }
+            .feature {
+                max-width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Kaviar Club</h1>
+                <p>Your personal finance partner</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h2>Our Services</h2>
+                <div class="feature-item">
+                    <h3>Financial Planning</h3>
+                    <p>Personalized financial plans tailored to your goals.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Investment Management</h3>
+                    <p>Expert investment strategies to grow your wealth.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Budgeting Assistance</h3>
+                    <p>Tools and guidance to help you manage your budget effectively.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <div class="testimonial-content">
+                <h2>Client Testimonials</h2>
+                <div class="testimonial-item">
+                    <p>"Kaviar Club helped me understand my finances better than ever before. Highly recommended!"</p>
+                    <cite>John Doe</cite>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Their investment strategies have significantly boosted my savings. Great service!"</p>
+                    <cite>Jane Smith</cite>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kaviar Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
